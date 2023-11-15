@@ -3,17 +3,17 @@ let jugador;
 let obstaculos;
 let tiempoInicio;
 let juegoTerminado = false;
-let imgObstaculo; // Variable para la imagen del obstáculo
+let imgObstaculo; 
 
 function preload() {
-  imgObstaculo = loadImage('arbol.jpg'); // Carga tu imagen aquí
+  imgObstaculo = loadImage('arbol.jpg');
 }
 
 function setup() {
   createCanvas(400, 400);
   jugador = new Jugador();
   obstaculo = new Obstaculo();
-  tiempoInicio = millis(); // Guardamos el tiempo actual en milisegundos
+  tiempoInicio = millis();
 }
 
 function draw() {
@@ -107,8 +107,7 @@ class Jugador {
   }
 
   mover() {
-    // Método de movimiento para las teclas de flecha
-    // Esto te permite moverte manteniendo presionada la tecla
+  
   }
 
   colision(o) {
@@ -123,7 +122,7 @@ class Obstaculo {
     this.y = random(height);
     this.ancho = random(50, 70);
     this.velocidad = random(1, 3);
-    this.movimientoVertical = false; // Bandera para controlar el movimiento vertical
+    this.movimientoVertical = false; 
   }
 
   mostrar() {
@@ -132,11 +131,11 @@ class Obstaculo {
 
   mover() {
     if (!this.movimientoVertical) {
-      this.x -= this.velocidad; // Mover horizontalmente de derecha a izquierda
+      this.x -= this.velocidad; 
     }
   }
 
 salirPantalla() {
-    return this.x + this.ancho < 0; // El obstáculo desaparece al alcanzar el borde izquierdo
+    return this.x + this.ancho < 0;
   }
 }
