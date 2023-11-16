@@ -26,7 +26,7 @@ class Juego {
         }
       }
 
-      // Controla la generación de obstáculos
+      // Controla creacion de obstáculos
       if (millis() - this.tiempoInicio < 10000) {
         if (frameCount % 30 === 0) {
           this.obstaculos.push(new Obstaculo());
