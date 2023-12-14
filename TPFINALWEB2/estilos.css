@@ -1,0 +1,237 @@
+/**/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Saira+Extra+Condensed&display=swap');
+
+body,
+h1,
+ul,
+li,
+nav {
+    /**/
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(80, 184, 232);
+    font-family: 'Saira Extra Condensed', sans-serif;
+
+}
+
+/* -----------textos ---------------*/
+h1 {
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40 px;
+    ;
+    /* Ajuste del margen entre h1 y h4 */
+    text-shadow:8px 4px 5px rgba(255, 0, 157, 0.5);
+    /* Cambia los valores para ajustar la sombra */
+}
+
+p {
+    font-size: 20px;
+}
+
+h2 {
+    color: rgb(105, 11, 44);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    ;
+    /* Ajuste del margen entre h1 y h4 */
+}
+
+h3 {
+    color: rgb(249, 72, 28);
+    font-family: 'Saira Extra Condensed', sans-serif;
+
+
+    font-size: 40px;
+    ;
+    /* Ajuste del margen entre h1 y h4 */
+    text-shadow: 4px 2px 6px rgba(243, 150, 150, 0.5);
+}
+
+div {
+    width: 800px;
+    max-width: 95%;
+    /*ancho maximo de la ventana*/
+    /**/
+    margin: 0 auto 0 auto;
+    /*margenes se adaptan automaticamente*/
+
+
+}
+
+/*-------------------------------HEADER--------------------*/
+header {
+    /*Titulo AIRBAG*/
+    background-color: rgb(105, 29, 126);
+    height: 100px;
+    text-align: center;
+    padding-top: 20px;
+    /* Grosor del relleno superior */
+
+}
+
+header h4 {
+    color: rgb(255, 225, 0);
+    /*color de subtitulo*/
+    font-size: 30px;
+    margin: 5px 0;
+    /* Ajuste del margen entre h1 y h4 */
+    font-family: 'Nova Square', sans-serif;
+}
+
+
+
+/*-------------------------------NAV--------------------*/
+nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(113, 23, 69);
+}
+
+nav li {
+    /*selector combinado: la lista de link horizontal*/
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    /* Cambiar a display block */
+    text-decoration: none;
+    color: white;
+    background-color: rgb(113, 23, 69);
+    padding: 15px 50px;
+    /* Ajustar el espaciado vertical si es necesario */
+}
+
+nav a:hover {
+    /*cambia color al posicionarme en los link*/
+
+    color: rgb(9, 85, 85);
+    ;
+    background-color: rgb(238, 132, 11)
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*-------------------------------ARTICLE--------------------*/
+article {
+    /*color fondo del articulo y tam de margen*/
+    color: beige;
+    margin: 20px;
+    /*espacio entre los margenes y el contenido*/
+    position: relative;
+    text-align: justify;
+}
+
+
+ 
+
+
+
+/*-------------------------------FOOTER--------------------*/
+footer {
+    background-color: rgb(249, 72, 28);
+    padding: 50px;
+    /*grosor de los bordes*/
+    width: 100%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+
+/*-----------------SELECTORES PERSONALIZADOS--------------------*/
+.centrada {
+    display: block;
+    /*atributo para que se comporte como bloque */
+    margin-left: auto;
+    /*se centra segun el tam de marg*/
+    margin-right: auto;
+    width: 50%;
+    /*porcentaje de tam segun la ventana*/
+    height: 40%;
+}
+
+.ajuste {
+    /*el ancho adpatable al ancho y alto de la ventana*/
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+
+}
+.ajuste2 {
+    /*el ancho adpatable al ancho y alto de la ventana*/
+    width: 100%;
+    height: auto;
+    
+
+}
+
+html {
+    scroll-behavior: smooth;
+    /*scroll suave*/
+}
+
+.volver {
+    position: absolute;
+    /* Posicionamiento absoluto dentro del article */
+    top: 0;
+    /* Ajusta la posición vertical si es necesario */
+    right: 0;
+    /* Coloca el elemento a la derecha */
+    width: 40px;
+    height: 40px;
+}
+
+
+.celda {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+
+
+
+
+@media(max-width:700px) {
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    header h4 {
+        font-size: 20px;
+    }
+
+
+
+}
